@@ -45,7 +45,7 @@ public class AluminiumPickaxeItem extends MinecraftUpgradePackModElements.ModEle
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(), new ItemStack(AluminiumIngotItem.block));
+				return Ingredient.fromStacks(new ItemStack(AluminiumIngotItem.block));
 			}
 		}, 1, -2.7999999999999998f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("aluminium_pickaxe"));

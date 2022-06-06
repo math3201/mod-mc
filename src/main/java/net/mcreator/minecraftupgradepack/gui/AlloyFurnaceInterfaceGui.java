@@ -28,15 +28,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.gui.ScreenManager;
 
-import net.mcreator.minecraftupgradepack.procedures.AlloyingProcedure;
 import net.mcreator.minecraftupgradepack.MinecraftUpgradePackModElements;
 import net.mcreator.minecraftupgradepack.MinecraftUpgradePackMod;
 
-import java.util.stream.Stream;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.AbstractMap;
 
 @MinecraftUpgradePackModElements.ModElement.Tag
 public class AlloyFurnaceInterfaceGui extends MinecraftUpgradePackModElements.ModElement {
@@ -121,17 +118,17 @@ public class AlloyFurnaceInterfaceGui extends MinecraftUpgradePackModElements.Mo
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 21, 23) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 26) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 21, 58) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 62) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 75, 40) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 97, 44) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 139, 58) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 62) {
 			}));
 			int si;
 			int sj;
@@ -380,13 +377,6 @@ public class AlloyFurnaceInterfaceGui extends MinecraftUpgradePackModElements.Mo
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
-
-			AlloyingProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

@@ -5,18 +5,33 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.minecraftupgradepack.MinecraftUpgradePackMod;
+import net.mcreator.minecraftupgradepack.procedures.Progress9Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress8Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress7Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress6Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress5Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress4Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress3Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress2Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress1Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress14Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress13Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress12Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress11Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress10Procedure;
+import net.mcreator.minecraftupgradepack.procedures.Progress0Procedure;
 
+import java.util.stream.Stream;
+import java.util.Map;
 import java.util.HashMap;
+import java.util.AbstractMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -57,6 +72,126 @@ public class AlloyFurnaceInterfaceGuiWindow extends ContainerScreen<AlloyFurnace
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+		if (Progress0Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/0.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress1Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/1.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress2Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/2.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress3Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/3.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress4Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/4.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress5Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/5.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress6Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/6.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress7Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/7.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress8Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/8.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress9Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/9.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress10Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/10.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress11Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/11.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress12Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/12.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress13Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/13.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
+		if (Progress14Procedure
+				.executeProcedure(Stream
+						.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x),
+								new AbstractMap.SimpleEntry<>("y", y), new AbstractMap.SimpleEntry<>("z", z))
+						.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll))) {
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("minecraft_upgrade_pack:textures/14.png"));
+			this.blit(ms, this.guiLeft + 60, this.guiTop + 52, 0, 0, 16, 5, 16, 5);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -76,7 +211,7 @@ public class AlloyFurnaceInterfaceGuiWindow extends ContainerScreen<AlloyFurnace
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Alloy Furnace", 7, 5, -12829636);
+		this.font.drawString(ms, "Alloy Furnace", 6, 7, -12829636);
 	}
 
 	@Override
@@ -89,11 +224,5 @@ public class AlloyFurnaceInterfaceGuiWindow extends ContainerScreen<AlloyFurnace
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 67, this.guiTop + 60, 30, 20, new StringTextComponent("r"), e -> {
-			if (true) {
-				MinecraftUpgradePackMod.PACKET_HANDLER.sendToServer(new AlloyFurnaceInterfaceGui.ButtonPressedMessage(0, x, y, z));
-				AlloyFurnaceInterfaceGui.handleButtonAction(entity, 0, x, y, z);
-			}
-		}));
 	}
 }

@@ -58,7 +58,7 @@
       "name": "AluminiumPickaxe",
       "type": "tool",
       "sortid": 7,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aluminium_pickaxe",
       "path": "~/minerais/aluminium/outil"
@@ -67,7 +67,7 @@
       "name": "AluminiumAxe",
       "type": "tool",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aluminium_axe",
       "path": "~/minerais/aluminium/outil"
@@ -76,7 +76,7 @@
       "name": "AluminiumSword",
       "type": "tool",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aluminium_sword",
       "path": "~/minerais/aluminium/outil"
@@ -85,7 +85,7 @@
       "name": "AluminiumShovel",
       "type": "tool",
       "sortid": 10,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aluminium_shovel",
       "path": "~/minerais/aluminium/outil"
@@ -94,7 +94,7 @@
       "name": "AluminiumHoe",
       "type": "tool",
       "sortid": 11,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "aluminium_hoe",
       "path": "~/minerais/aluminium/outil"
@@ -454,39 +454,6 @@
       "path": "~/minerais/souffre"
     },
     {
-      "name": "Alloying",
-      "type": "procedure",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "alloying",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Block/Alloy Smelter/Procedure"
-    },
-    {
       "name": "SteelIngot",
       "type": "item",
       "sortid": 60,
@@ -797,6 +764,35 @@
       "locked_code": false,
       "registry_name": "hellstone_hoe_recipe",
       "path": "~/minerais/hellstone/tool"
+    },
+    {
+      "name": "Alloying",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alloying",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Block/Alloy Smelter/Procedure"
     }
   ],
   "variable_elements": [],

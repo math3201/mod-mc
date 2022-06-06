@@ -45,7 +45,7 @@ public class AluminiumHoeItem extends MinecraftUpgradePackModElements.ModElement
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(AluminiumIngotItem.block));
+				return Ingredient.fromStacks(new ItemStack(), new ItemStack(AluminiumIngotItem.block));
 			}
 		}, 0, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("aluminium_hoe"));

@@ -45,7 +45,7 @@ public class AluminiumSwordItem extends MinecraftUpgradePackModElements.ModEleme
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(AluminiumIngotItem.block));
+				return Ingredient.fromStacks(new ItemStack(), new ItemStack(AluminiumIngotItem.block));
 			}
 		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
 		}.setRegistryName("aluminium_sword"));

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft_upgrade_pack:blocks/acier_ore_block",
+    "particle": "minecraft_upgrade_pack:blocks/acier_ore_block"
+  }
+}

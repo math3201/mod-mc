@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "minecraft_upgrade_pack:blocks/soufre_ore",
+    "particle": "minecraft_upgrade_pack:blocks/soufre_ore"
+  }
+}

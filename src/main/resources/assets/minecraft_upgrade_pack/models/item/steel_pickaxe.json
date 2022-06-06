@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "minecraft_upgrade_pack:items/steel_pickaxe"
+  }
+}

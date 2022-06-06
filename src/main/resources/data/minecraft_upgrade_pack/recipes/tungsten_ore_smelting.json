@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 350,
+  "ingredient": {
+    "item": "minecraft_upgrade_pack:tungsten_ore"
+  },
+  "result": {
+    "item": "minecraft_upgrade_pack:tungsten_ingot"
+  }
+}

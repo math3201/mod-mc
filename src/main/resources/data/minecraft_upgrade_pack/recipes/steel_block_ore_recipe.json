@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_upgrade_pack:steel_block"
+    }
+  ],
+  "result": {
+    "item": "minecraft_upgrade_pack:steel_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "minecraft_upgrade_pack:aluminium_ore"
+  },
+  "result": {
+    "item": "minecraft_upgrade_pack:aluminium_ingot"
+  }
+}

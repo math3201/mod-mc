@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "REDSTONE"
     },
     "destroyTool": "Not specified",
     "customDrop": {

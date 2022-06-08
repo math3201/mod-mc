@@ -1272,6 +1272,23 @@
         ]
       },
       "path": "~/Block/Alloy Smelter/Procedure"
+    },
+    {
+      "name": "Aurafeu",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aurafeu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/minerais/hellstone/tool"
     }
   ],
   "variable_elements": [],

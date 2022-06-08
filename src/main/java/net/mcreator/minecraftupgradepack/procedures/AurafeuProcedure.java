@@ -15,6 +15,6 @@ public class AurafeuProcedure {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		entity.setFire((int) 15);
+		entity.setFire((int) 8);
 	}
 }
